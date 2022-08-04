@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contact</title>
+	<link rel="stylesheet" href=".//style.css">
+	<link rel="stylesheet" href=".//bootstrap.css">
+	<style>
+		.wh1{
+			width: 100px;
+		}
+	</style>
+</head>
+<body class="container-fluid">
+	
+	<div class="container1"> 
+		<a target="_blank" href="http://localhost:5000/signup" class="signup-btn"> <span> Sign Up </span> </a>
+		<div> 
+			<ul class="row ps-0 list-unstyled">
+				<li class="logo col-2"> <img src="./image/sayna.jpg"> </li>
+				<li class="col-1 d-flex align-items-center offset-1"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/index"> Home</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/backend"> BackEnd</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/frontend"> FrontEnd</a></li>
+				<li class="col-2 d-flex align-items-center justify-content-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/marketing">Marketing Digital</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/uxui">UX/UI</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black"  href="http://localhost:5000/contact">Contact</a></li>
+			
+			</ul>
+
+		</div>
+	
+		<div class="banner container offset-1 row" > 
+	
+			<div class="app-text col-5 h-50"> 
+					<h1> D-CLIC <br> Venez nous voir </h1>
+					<p class="container wh1 pe-0 ms-1">Prenez contact avec nous. </p>
+					<div class="play-btn"> 
+						<div class="play-btn-inner"> 
+							
+						</div>
+					</div>
+			</div>
+	
+			<div class="app-picture-contact  col-7 d-flex justify-content-center" >
+				<img src="./image/image_contact.jpg">
+	
+			</div> 
+	
+	
+			<div>
+				<h2 class="text-center">Notez la formation</h2>
+			
+			<div>
+			  <form action="http://php1/contact.php" method="post">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="nom" placeholder="Your name..">
+			
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="prenom" placeholder="Your last name..">
+			
+				<label for="avis">Votre avis</label>
+				<input type="text" id="avis" name="avis" placeholder="donnez votre avis sur la formation..">
+			
+				<label for="Note">Note</label>
+				<input type="number" id="Note" name="note" min="1" max="5" placeholder="votre note ..">
+			
+				<label for="formation">Formation</label>
+				<select id="formation" name="formation">
+				  <option value="Frontend">Frontend</option>
+				  <option value="Backend">Backend</option>
+				  <option value="Marketing">Marketing</option>
+				  <option value="UXUI">UX-UI</option>
+				</select>
+			  
+				<input id="btn" type="submit" value="Submit">
+			  </form>
+			</div>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>

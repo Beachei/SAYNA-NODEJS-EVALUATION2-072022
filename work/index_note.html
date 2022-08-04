@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inote</title>
+    <link rel="stylesheet" href=".//style.css">
+    <link rel="stylesheet" href=".//bootstrap.css">
+    <style>
+        .bord{
+            border: 3px solid rgba(63, 61, 61, 0.664);
+            border-top: none;
+            border-bottom: none;
+            border-radius:0;
+        }
+        .bordl{
+            border-left: 5px solid rgba(63, 61, 61, 0.664);
+            border-top-left-radius: 10px ;
+            border-bottom-left-radius:10px ;
+        }
+        .bordr{
+            border-right: 5px solid rgba(63, 61, 61, 0.664);
+            border-top-right-radius: 10px ;
+            border-bottom-right-radius:10px ;
+        }
+    </style>
+</head>
+<body class="container1">
+    
+    <div class ="container1"> 
+		<a target="_blank" href="http://localhost:5000/signup" class="signup-btn"> <span> Sign Up </span> </a>
+		<div> 
+			<ul class="row ps-0 list-unstyled">
+				<li class="logo col-2"> <img src="./image/sayna.jpg"> </li>
+				<li class="col-1 d-flex align-items-center offset-1"><a class="text-decoration-none text-black" href="http://localhost:5000/index"> Home</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/backend"> BackEnd</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/frontend"> FrontEnd</a></li>
+				<li class="col-2 d-flex align-items-center justify-content-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/marketing">Marketing Digital</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/uxui">UX/UI</a></li>
+				<li class="col-1 d-flex align-items-center"><a class="text-decoration-none text-black" target="_blank" href="http://localhost:5000/contact">Contact</a></li>
+			
+			</ul>
+		</div>
+	</div>
+        <div class="container-fluid">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 bord bordl">
+                            <div>
+                                <h3 class="text-center">
+                                    backend
+                                </h3>
+                            </div>
+                            <div>
+                                <h4 id="h4">qD 100 %</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 bord">
+                            <div>
+                                <h3 class="text-center">
+                                    frontend
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-3 bord">
+                            <div>
+                                <h3>
+                                    marketing digital
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-3 bordr bord">
+                            <div>
+                                <h3 class="text-center">
+                                    design ux/ui
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const H4 = document.getElementById("h4")
+            H4.innerHTML = "google"
+            
+        </script>
+</body>
+</html>
